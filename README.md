@@ -6,10 +6,10 @@ These API docs cover v1.0 of the [Arbon](https://www.arbon.one/) API.
 Contact us via email contact@arbon.one to get in touch.
 
 ## 2. Grab your API Key
-We will share the Sandbox API Access Key with you uppn your request.
+We will share the Sandbox API Access Key with you upon your request.
 
 ## 3. Make your first request to offset Carbon
-Currently there is only one endpoint that supports Carbon offset functionality. See the request template and the required parameters eplained below:
+Currently there is only one endpoint that supports Carbon offset functionality. See the request template and the required parameters explained below:
 
 ### Request template
 ```
@@ -24,14 +24,14 @@ https://api.arbon.one/v1/offset/?access_token={access_token}&amount={amount}&rea
     Example: `access_token=8534060ab04240b88ebe8715b27ca1f1`
 
 - **{amount}** `int`
-    Amount of CO2 tokens to offset. Each token corresponds to 1kg of CO2.
+    Amount of CO2 to offset, in kilograms.
 
-    Example: `5`
+    Example: `500`
 
 - **{reason}** `string`
-    Reason for CO2 tokens being offset.
+    Reason for CO2 tokens being offset. This can be an account ID, a transaction ID or whatever you want.
 
-    Example: `hosting`
+    Example: `hosting account #1234`
 
 ## Response
 ### Status: **200 - OK**
