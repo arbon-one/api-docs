@@ -1,4 +1,4 @@
-These API docs cover v1.0 of the [Arbon](https://www.arbon.one/) API.
+These API docs cover v1.0 of the [Arbon](https://www.arbon.one/) Receipt API.
 
 # Quick Start
 
@@ -40,7 +40,8 @@ Successful response will return a transaction hash on the respective network. Th
 
 ```
 {
-  "hash": "https://mumbai.polygonscan.com/tx/0x655ae3e81f07bce450e489f9ccad9ac995d5c45154b72260259f57bee02a2d10"
+  "hash": "0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae",
+  "receipt": "https://api.arbon.one/v1/receipt/tx/0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae"
 }
 ```
 ### Status: 400 - Bad Request
@@ -63,3 +64,7 @@ Successful response will return a transaction hash on the respective network. Th
   "message": "Unauthorized"
 }
 ```
+
+# Embed Receipt into your website
+
+<object type="image/svg+xml" data="https://api.arbon.one/v1/receipt/tx/0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae"></object>
