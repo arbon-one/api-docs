@@ -67,4 +67,9 @@ Successful response will return a transaction hash on the respective network. Th
 
 # Embed Receipt into your website
 
+```html
 <object type="image/svg+xml" data="https://api.arbon.one/v1/receipt/tx/0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae"></object>
+```
+
+# Sample receipt
+<img src="https://api.arbon.one/v1/receipt/tx/0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae" />
