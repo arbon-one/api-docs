@@ -67,9 +67,22 @@ Successful response will return a transaction hash on the respective network. Th
 
 # Embed Receipt into your website
 
+## Embed an interactive image (Recommended)
+Receipt SVG image contains links to blockchain transaction and to some additional information to help better understand transaction details. To make sure the content of the receipt is interative and the links are clickable, use the following code to embed the receipt:
+
 ```html
-<object type="image/svg+xml" data="https://api.arbon.one/v1/receipt/tx/0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae"></object>
+<object type="image/svg+xml" data="https://api.arbon.one/v1/receipt/tx/{transaction_hash}"></object>
 ```
+NOTE: replace `{transaction_hash}` with the hash of the actual transaction.
+
+## Embed a static image
+In case, for some reason, you cannot embed receipt using an `<object>` tag, you can do it via an `<img>` tag as the following:
+
+```html
+<img src="https://api.arbon.one/v1/receipt/tx/{transaction_hash}" />
+```
+
+NOTE: replace `{transaction_hash}` with the hash of the actual transaction.
 
 # Sample receipt
 <img src="https://api.arbon.one/v1/receipt/tx/0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae" />
