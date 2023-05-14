@@ -2,7 +2,7 @@ These API docs cover v1.0 of the [Arbon](https://www.arbon.one/) Receipt API.
 
 # Quick Start
 
-## 1. Request access to Arbon sandbox
+## 1. Request access to Arbon Sandbox
 Contact us via email contact@arbon.one to get in touch.
 
 ## 2. Grab your API Key
@@ -36,12 +36,12 @@ https://dev-api.arbon.one/v1/offset/?access_token={access_token}&amount={amount}
 ## Response
 ### Status: **200 - OK**
 
-Successful response will return a transaction hash on the respective network. The example below returns the hash of the transaction on the [Mumbai](https://mumbai.polygonscan.com/) test network. The link to see the transaction details will be: https://mumbai.polygonscan.com/tx/0x655ae3e81f07bce450e489f9ccad9ac995d5c45154b72260259f57bee02a2d10
+Successful response will return a transaction hash on the respective network. The example below returns the hash of the transaction on the [Mumbai](https://mumbai.polygonscan.com/) test network. The link to see the transaction details will be: https://mumbai.polygonscan.com/tx/0x1246d8be97194f6846c8c92103211661a69900985c6936f30b578330fdd84b4a
 
 ```
 {
-  "hash": "0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae",
-  "receipt": "https://dev-api.arbon.one/v1/receipt/tx/0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae"
+  "hash": "0x1246d8be97194f6846c8c92103211661a69900985c6936f30b578330fdd84b4a",
+  "receipt": "https://dev-api.arbon.one/v1/receipt/tx/0x1246d8be97194f6846c8c92103211661a69900985c6936f30b578330fdd84b4a"
 }
 ```
 ### Status: 400 - Bad Request
@@ -85,4 +85,4 @@ In case, for some reason, you cannot embed receipt using an `<object>` tag, you 
 NOTE: replace `{transaction_hash}` with the hash of the actual transaction.
 
 # Sample receipt
-<img src="https://dev-api.arbon.one/v1/receipt/tx/0x7bda805b996c2d4a84c941eaa3c0caf23b8a46c44cb0513267ea3b776bbc45ae" />
+<img src="https://dev-api.arbon.one/v1/receipt/tx/0x1246d8be97194f6846c8c92103211661a69900985c6936f30b578330fdd84b4a" />
